@@ -1,0 +1,91 @@
+body{
+    font-family: Arial serif;
+    font-size: 20px;
+    margin: 0;
+  
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 87px;
+    grid-column: 1/13;
+    background-color: #00283C;
+}
+
+.logo{
+    grid-column: 3/5;
+}
+a img {
+   position: relative;
+    max-height: 134px;
+}
+.elements {
+    font-size: 24px;
+    grid-column: 6/12;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+ 
+}
+ul li {
+    display: inline;
+}
+
+ul li a{
+    color: #fff;
+    padding: 15px;
+    
+}
+
+
+/* CODE FOR MAIN CONTENT STARTS HERE*/
+#main-content .title {
+    margin-bottom: 50px;
+}
+#main-content {
+    text-align: justify;
+    color:#00283C;
+    grid-column: 4/10;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 2.0rem;
+}
+#main-content p {
+    margin-left: 90px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    right:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    background-color:#252525;
+    color:white;
+  
+    height:50px;
+    align-content: center;
+}
+
+.visit {
+    grid-column: 2/6;
+    margin: 0;
+    
+}
+
+.alachua-info{
+    font-size: 15px;
+    color:white;
+   
+}

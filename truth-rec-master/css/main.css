@@ -1,0 +1,210 @@
+body{
+    font-family: Arial serif;
+    font-size: 20px;
+    margin: 0;
+  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer"
+}
+
+
+#nav {
+    grid-area: nav;
+}
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "hero"
+    "first-content"
+    "second-content"
+    "tagline"
+    "images"
+    "img-quote"
+}
+
+#hero{
+  
+    grid-area: hero;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero{
+    display:grid;
+    grid-template-columns: 12% auto 12%;
+    background-color:#252525;
+}
+.hero-img {
+    width:100%;
+    grid-column: 2/3;
+}
+#first-content{
+    grid-area: first-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content-header1{
+    padding: 0 15%;
+    text-align: justify;
+}
+.content-header2{
+    padding: 0 15%;
+}
+.content-text1, .content-text2{
+    padding: 0 18%;
+}
+.explore {
+    padding: 0 18%;
+}
+#second-content{
+    grid-area: second-content;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+#tagline {
+    grid-area: tagline;
+}
+#img-quote {
+    grid-area: img-quote;
+    display: grid;
+    background:#00283C;
+    color: white;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "images"
+    "history-text"
+    "quote"
+    
+}
+.images{
+    grid-area: images;
+    display: grid;
+    padding: 0 20%;
+    margin-top: 50px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.img {
+    width: 100%;
+}
+.history-text{
+    grid-area: history-text;
+    padding: 0 20%;
+}
+.quote{
+    margin-bottom: 100px;
+    padding-left: 70%;
+    grid-area: quote;
+    color:#9F895D;
+    border-bottom: 1px #9F895D solid;
+}
+#footer {
+    grid-area: footer;
+}
+
+.nav{
+    background-color: #00283C;
+    display: grid; 
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);   
+    grid-template-rows: 87px;  
+}
+.logo{
+    grid-column: 3/5;
+    
+}
+
+
+
+
+.elements {
+    font-size: 24px;
+    grid-column: 6/12;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.truth-img{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+ 
+}
+ul li {
+    display: inline;
+}
+
+ul li a{
+    color: #fff;
+    padding: 15px;
+    
+}
+
+.menu {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+.tagline {
+ 
+color: white;
+background-color: #9F895d;
+}
+
+
+/*CODE FOR HISTORY SECTION */   
+
+
+.history-text{
+
+    line-height: 2.5em;
+  
+    margin-top: 40px;
+    border-top: 1px #9F895D solid;
+  
+}
+a img{
+    width: 100%;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    right:0;
+    left:0;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    background-color:#252525;
+    color:white;
+    height:50px;
+    align-content: center;
+}
+
+.visit {
+    grid-column: 2/6;
+    margin: 0;
+    
+}
+
+.alachua-info{
+    font-size: 15px;
+    color:white;
+   
+}
+

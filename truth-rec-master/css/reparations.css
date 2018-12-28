@@ -1,0 +1,118 @@
+body{
+    font-family: Arial serif;
+    font-size: 20px;
+    margin: 0;
+  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  
+}
+
+/* CSS FOR NAVBAR AND SUBNAV BAR*/
+.nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 87px 47px;
+    grid-column: 1/13;
+    background-color: #00283C;
+}
+
+.logo{
+    grid-column: 3/5;
+}
+a img {
+   position: relative;
+    max-height: 134px;
+}
+.elements {
+    font-size: 24px;
+    grid-column: 6/12;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.subnav{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+    background-color: black;
+    grid-row: 2;
+    border-top: 3px solid #9F895D;
+
+}
+.sub-elements {
+    grid-column: 6/10; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+ 
+}
+ul li {
+    display: inline;
+}
+
+ul li a{
+    color: #fff;
+    padding: 15px;
+    
+}
+
+/* CODE FOR NAV AND SUB ENDS HERE.*/
+
+.mini-grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 55px;
+    grid-gap: 15px;
+}
+.rep-text{
+    grid-column:3/7;
+    
+    
+}
+.rep-text, p, h1{
+    color:#00283c;
+    line-height: 1.5rem;
+}
+.card{
+    width:100%;
+}
+.image-left{
+    grid-column:3/5;
+}
+.image-right{
+    grid-column:5/7;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    right:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    background-color:#252525;
+    color:white;
+  
+    height:50px;
+    align-content: center;
+}
+
+.visit {
+    grid-column: 2/6;
+    
+}
+
+.alachua-info{
+    font-size: 15px;
+    color:white;
+   
+}
