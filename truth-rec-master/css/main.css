@@ -131,13 +131,13 @@ body{
 .img {
     width: 100%;
 }
-.img1{
+.img-left{
     -ms-grid-column: 1;
 }
-.img2{
+.img-center{
     -ms-grid-column: 2;
 }
-.img3{
+.img-right{
     -ms-grid-column: 3;
 }
 
