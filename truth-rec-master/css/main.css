@@ -92,9 +92,21 @@ body{
     margin-top: 50px;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: 
+    "img1 img2 img3"
+}
+.img {
     width: 100%;
 }
-
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
 .history-text{
     grid-area: history-text;
     padding: 0 20%;
