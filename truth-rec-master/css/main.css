@@ -8,7 +8,7 @@ body{
 .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto)(3);
+    -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3, auto);
         grid-template-areas:
     "nav"
@@ -28,7 +28,7 @@ body{
     grid-area: main;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto)(6);
+    -ms-grid-rows: (auto)[6];
     grid-template-rows: repeat(6, auto);
         grid-template-areas: 
     "hero"
@@ -103,7 +103,7 @@ body{
     display: grid;
     background:#00283C;
     color: white;
-    -ms-grid-rows: (auto)(3);
+    -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3,auto);
         grid-template-areas: 
     "images"
@@ -155,7 +155,7 @@ body{
     display: -ms-grid;
     display: grid; 
     position: relative;
-    -ms-grid-columns: (1fr)(12);
+    -ms-grid-columns: (1fr)[12];
     grid-template-columns: repeat(12, 1fr);   
     -ms-grid-rows: 87px;   
     grid-template-rows: 87px;  
@@ -291,7 +291,7 @@ a img{
 #footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)(12);
+    -ms-grid-columns: (1fr)[12];
     grid-template-columns: repeat(12, 1fr);
     right:0;
     left:0;
