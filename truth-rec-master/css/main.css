@@ -132,12 +132,15 @@ body{
     width: 100%;
 }
 .img-left{
+    margin: 0 5%;
     -ms-grid-column: 1;
 }
 .img-center{
+    margin: 0 5%;
     -ms-grid-column: 2;
 }
 .img-right{
+    margin: 0 5%;
     -ms-grid-column: 3;
 }
 
