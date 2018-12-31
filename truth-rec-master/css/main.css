@@ -113,14 +113,14 @@ body{
 }
 .images{
     -ms-grid-row: 5;
-    -ms-grid-column: 1;
+    -ms-grid-column: 30% 30% 30%;
     grid-area: images;
     display: -ms-grid;
     display: grid;
     padding: 0 20%;
     margin-top: 50px;
     grid-gap: 10px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 #img-quote > .images{
     -ms-grid-row: 1;
