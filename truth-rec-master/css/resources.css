@@ -1,109 +1,121 @@
-body{
+body {
     font-family: Arial serif;
     font-size: 20px;
     margin: 0;
-  
+
 }
 
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer"
+}
+
+#nav {
+    display: grid;
+    background-color: #00283C;
+    grid-area: navbar;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+    "logo nav"
+    "logo subnav"
+}
+.logo{
+    grid-area: logo;
+}
+
+.subnav{
+    grid-area: subnav;
+}
+#main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding: 0 20%;
+    grid-template-areas:
+    "header"
+    "resources"
+}
+#header{
+    grid-area: header;
+}
+#resources {
+    grid-area: resources;
+    display: grid;  
+    grid-template-areas: 
+    "top-left top-right"
+    "bottom-left bottom-right"
+}
+.resource{
+    width: 100%;
+}
+#footer{
+    grid-area: footer;
 }
 
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
-.nav {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 87px 47px;
-    grid-column: 1/13;
-    background-color: #00283C;
-}
 
-.logo{
-    grid-column: 3/5;
-}
+
 a .logo-img {
-   position: relative;
+ 
     max-height: 134px;
 }
+
 .elements {
     font-size: 24px;
-    grid-column: 6/12;
+  
     margin-top: auto;
     margin-bottom: auto;
 }
-.subnav{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-column: 1/13;
+
+.subnav {
+  
+ 
+
     background-color: black;
-    grid-row: 2;
+
     border-top: 3px solid #9F895D;
 
 }
+
 .sub-elements {
-    grid-column: 6/10; 
+   
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 25px;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
- 
+
 }
+
 ul li {
     display: inline;
 }
 
-ul li a{
+ul li a {
     color: #fff;
     padding: 15px;
-    
+
 }
 
-.resources {
-    grid-column: 4/7;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
 
 a .resource {
     width: 100%;
 }
 
-#main {
-    justify-content: center;
-   
-    align-items: center;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12,1fr);
-}
 
-.image-top-left {
-    grid-row: 1;
-    grid-column: 4/7;
-}
-.image-top-right {
-    grid-row: 1;
-    grid-column: 7/10;
-}
-.image-bottom-left{
-    grid-row: 2;
-    grid-column: 4/7;
-
-}
-.image-bottom-right {
-    grid-row: 2;
-    grid-column: 7/10;
-}
-
-.card{
+.card {
     width: 100%;
 }
 
@@ -112,25 +124,25 @@ a .resource {
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
     bottom: 0;
     position: absolute;
     width: 100%;
-    background-color:#252525;
-    color:white;
-    height:50px;
+    background-color: #252525;
+    color: white;
+    height: 50px;
     align-content: center;
 }
 
 .visit {
     grid-column: 2/6;
     margin: 0;
-    
+
 }
 
-.alachua-info{
+.alachua-info {
     font-size: 15px;
-    color:white;
-   
+    color: white;
+
 }
