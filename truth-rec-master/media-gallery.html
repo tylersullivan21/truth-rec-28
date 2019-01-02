@@ -67,115 +67,76 @@
 
             <!--SECTION FOR VIDEO GRID STARTS HERE-->
             <section class="video-content">
-                <article class="shadow">
-                    <div class="image-top-left">
-                        <a href="#img1">
-                            <img src="img/shadows.png" class="resource" alt="in the shadows image">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img1">
-                            <img src="img/shadows.png" alt="in the shadows image">
-                        </a>
+                <div class="row">
+                    <div class="column">
+                      <img src="img/baseball-league.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
-
-                    <div class="shadow-text">
-                        <p><strong>In the Shadows of Plantations </strong></p>
-                        <p>30:00</p>
+                    <div class="column">
+                      <img src="img/verdell.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                     </div>
-                </article>
-
-                <article class="bo-diddley">
-                    <div class="image-top-left">
-                        <a href="#img2">
-                            <img src="img/bo-diddley.png" class="resource" alt="image of Bo Diddley">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img2">
-                            <img src="img/bo-diddley.png" alt="image of Bo Diddley">
-                        </a>
+                    <div class="column">
+                      <img src="img/cotton-club.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                     </div>
-
-                    <div class="shadow-text">
-                        <p><strong>Bo Diddley Memorial 2008</strong></p>
-                        <p>08:21</p>
+                    <div class="column">
+                      <img src="img/bo-diddley.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                     </div>
-                </article>
-
-                <article class="baseball">
-                    <div class="image-top">
-                        <a href="#img3">
-                            <img src="img/baseball-league.png" class="resource" alt="image of baseball players">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img3">
-                            <img src="img/baseball-league.png" alt="image of baseball players">
-                        </a>
+                    <div class="column">
+                        <img src="img/bo-diddley.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column">
+                        <img src="img/bo-diddley.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column">
+                        <img src="img/bo-diddley.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                      </div>
+                  </div>
+                  
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/baseball-league.png" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/verdell.png" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/cotton-club.png" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/bo-diddley.png" style="width:100%">
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                  
+                      <div class="column">
+                        <img class="demo cursor" src="img/cotton-club.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img/baseball-league.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                      </div>
                     </div>
-
-                    <div class="shadow-text">
-                        <p><strong>Negro Baseball League Players visit Alachua County</strong></p>
-                        <p>09:22</p>
-                    </div>
-                </article>
-
-           
-                <article class="verdell-washington">
-                    <div class="image-top">
-                        <a href="#img4">
-                            <img src="img/verdell.png" class="resource" alt="image of Verdell Washington">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img4">
-                            <img src="img/verdell.png" alt="image of Verdell Washington">
-                        </a>
-                    </div>
-
-                    <div class="shadow-text">
-                        <p><strong>Alachua County Talks: Verdell Washington Robinson</strong></p>
-                        <p>25:01</p>
-                    </div>
-                </article>
-
-              <article class="freedom-ride">
-                    <div class="image-top">
-                        <a href="#img5">
-                            <img src="img/freedon-ride.png" class="resource" alt="image of a lady on a bus">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img5">
-                            <img src="img/freedon-ride.png" alt="image of a lady on a bus">
-                        </a>
-                    </div>
-
-                    <div class="shadow-text">
-                        <p><strong>Freedom Ride</strong></p>
-                        <p>28:30</p>
-                    </div>
-                </article>
-
-
-                <article class="cotton-club">
-                    <div class="image-top">
-                        <a href="#img6">
-                            <img src="img/cotton-club.png" class="resource" alt="image of chari person of cotton club museum">
-                        </a>
-
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="#_" class="lightbox" id="img6">
-                            <img src="img/cotton-club.png" alt="image of chari person of cotton club museum">
-                        </a>
-                    </div>
-
-                    <div class="shadow-text">
-                        <p><strong>Cotton Club Museum and Cultural Center</strong></p>
-                        <p>28:30</p>
-                    </div>
-                </article>
+                  </div>
             </section>
 
 
@@ -290,6 +251,45 @@
                         </a>
                     </div>
                 </article>
+                <script>
+                    function openModal() {
+                      document.getElementById('myModal').style.display = "block";
+                    }
+                    
+                    function closeModal() {
+                      document.getElementById('myModal').style.display = "none";
+                    }
+                    
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      var captionText = document.getElementById("caption");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                      captionText.innerHTML = dots[slideIndex-1].alt;
+                    }
+                    </script>
+                        
             </section>
 
 
