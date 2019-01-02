@@ -6,13 +6,60 @@ body{
 }
 
 .grid-container {
+  display:grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+  "nav"
+  "main"
+  "footer"
+}
+#nav {
+    grid-area: nav;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-  
+    grid-template-rows: 87px 47px;
+    grid-column: 1/13;
+    background-color: #00283C;
+}
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    padding: 0 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-template-areas: 
+    "intro"
+    "path"
+}
+#intro{
+    grid-area: intro;
+}
+#path {
+    grid-area: path;
+    display: grid;
+    grid-gap: 15px;
+    
+    grid-template-columns:   repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas:
+    "path-left path-right"
+}
+#path-left{
+    grid-area: path-left;
+}
+#path-right{
+    grid-area: path-right;
+}
+.path-img{
+    width: 100%;
+}
+#footer{
+    grid-area: footer;
 }
 
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
-.nav {
+#nav {
+    grid-area: nav;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 87px 47px;
@@ -67,30 +114,12 @@ ul li a{
 
 /* CODE FOR NAV AND SUB ENDS HERE.*/
 
-.mini-grid{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin-top: 55px;
-    grid-gap: 15px;
-}
-.rep-text{
-    grid-column:3/7;
-    
-    
-}
+
 .rep-text, p, h1{
     color:#00283c;
     line-height: 1.5rem;
 }
-.card{
-    width:100%;
-}
-.image-left{
-    grid-column:3/5;
-}
-.image-right{
-    grid-column:5/7;
-}
+
 
 footer {
     display: grid;
