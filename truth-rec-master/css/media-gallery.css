@@ -7,31 +7,24 @@ body{
 
 
 .grid-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3,auto);
-      grid-template-areas:
+  grid-template-areas:
   "nav"
   "content"
   "footer"
 }
 
 #nav {
-    -ms-grid-row:1;
-    -ms-grid-column:1;
     grid-area:nav;
 }
 
 #main {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: content;
-    display:-ms-grid;
     display:grid;
-    -ms-grid-rows: (auto)[7];
     grid-template-rows: repeat(7,auto);
-        grid-template-areas: 
+    padding: 0 20%;
+    grid-template-areas: 
     "intro"
     "video-title"
     "video-content"
@@ -42,61 +35,47 @@ body{
 }
 
 #footer {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: footer;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[2];
     grid-template-columns: repeat(2,auto);
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
-        grid-template-areas: 
+    grid-template-areas: 
     "copyright"
     "logos"    
 }
 
 /* MAPPING NESTED GRIDS FOR CONTENT AREAS: VIDEO, PHOTOS AND MAP*/
-.video-content, .photo-content, .map-content {
-    display: -ms-grid;
+.video-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+ .photo-content, .map-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
     grid-gap: 20px;
 }
 
 .intro {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: intro;
 }
 .video-title{
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: video-title;
 }
 .video-content{
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: video-content;
 }
 .photo-title{
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
     grid-area: photo-title;
 }
 .photo-content{
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
     grid-area: photo-content;
 }
 .map-title{
--ms-grid-row: 6;
--ms-grid-column: 1;
 grid-area: map-title;
 }
 .map-content{
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
     grid-area: map-content;
 }
 
@@ -106,117 +85,14 @@ grid-area: map-title;
 
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
 .nav {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
     grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 87px 47px;
     grid-template-rows: 87px 47px;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-column: 1/13;
     background-color: #00283C;
 }
-.nav > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-}
-.nav > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-}
-.nav > *:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-}
-.nav > *:nth-child(4) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-}
-.nav > *:nth-child(5) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-}
-.nav > *:nth-child(6) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 6;
-}
-.nav > *:nth-child(7) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-}
-.nav > *:nth-child(8) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 8;
-}
-.nav > *:nth-child(9) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-}
-.nav > *:nth-child(10) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 10;
-}
-.nav > *:nth-child(11) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 11;
-}
-.nav > *:nth-child(12) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 12;
-}
-.nav > *:nth-child(13) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-}
-.nav > *:nth-child(14) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-}
-.nav > *:nth-child(15) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-}
-.nav > *:nth-child(16) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-}
-.nav > *:nth-child(17) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-}
-.nav > *:nth-child(18) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 6;
-}
-.nav > *:nth-child(19) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 7;
-}
-.nav > *:nth-child(20) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 8;
-}
-.nav > *:nth-child(21) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 9;
-}
-.nav > *:nth-child(22) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 10;
-}
-.nav > *:nth-child(23) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 11;
-}
-.nav > *:nth-child(24) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 12;
-}
 
 .logo{
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
     grid-column: 3/5;
 }
 a .logo-img {
@@ -225,29 +101,20 @@ a .logo-img {
 }
 .elements {
     font-size: 24px;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 6;
     grid-column: 6/12;
     margin-top: auto;
     margin-bottom: auto;
 }
 .subnav{
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
     grid-template-columns: repeat(12,1fr);
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
     grid-column: 1/13;
     background-color: black;
-    -ms-grid-row: 2;
     grid-row: 2;
     border-top: 3px solid #9F895D;
 
 }
 .sub-elements {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 4;
     grid-column: 6/10; 
     margin-top: auto;
     margin-bottom: auto;
@@ -270,8 +137,6 @@ ul li a{
     
 }
 .breadcrumb {
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
     grid-column: 4/10;
     padding: 0;
     margin: 0;
@@ -312,9 +177,7 @@ ul.breadcrumb {
 
 .shadow{
    
-    -webkit-box-shadow:3px  5px 6px #ccc;
-   
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 .shadow-text {
@@ -326,37 +189,28 @@ ul.breadcrumb {
 }
 
 .bo-diddley{
-    -webkit-box-shadow:3px  5px 6px #ccc;
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 
 .baseball{
 
-    -webkit-box-shadow:3px  5px 6px #ccc;
-
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 .verdell-washington{
 
-    -webkit-box-shadow:3px  5px 6px #ccc;
-
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 .freedom-ride{
    
-    -webkit-box-shadow:3px  5px 6px #ccc;
-   
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 .cotton-club {
   
-    -webkit-box-shadow:3px  5px 6px #ccc;
-  
-            box-shadow:3px  5px 6px #ccc;
+    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 
@@ -380,20 +234,18 @@ ul.breadcrumb {
 
 
 footer {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
     grid-template-columns: repeat(12, 1fr);
     right:0;
     left:0;
-
-    position: absolute;
+    bottom: 0;
+    position: fixed;
     width: 100%;
     background-color:#252525;
     color:white;
     height:50px;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
+    padding: 0 20%;
 }
 
 
@@ -433,4 +285,299 @@ footer {
 
 	/** Unhide lightbox **/
 	display: block;
+}
+
+
+@media screen and (max-width: 400px){
+
+    body{
+    font-family: Arial serif;
+    font-size: 20px;
+    margin: 0;
+  
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+  grid-template-areas:
+  "nav"
+  "content"
+  "footer"
+}
+
+#nav {
+    grid-area:nav;
+}
+
+#main {
+    grid-area: content;
+    display:grid;
+    grid-template-rows: repeat(7,auto);
+    padding: 0 20%;
+    grid-template-areas: 
+    "intro"
+    "video-title"
+    "video-content"
+    "photo-title"
+    "photo-content"
+    "map-title"
+    "map-content"
+}
+
+#footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "copyright"
+    "logos"    
+}
+
+/* MAPPING NESTED GRIDS FOR CONTENT AREAS: VIDEO, PHOTOS AND MAP*/
+.video-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+ .photo-content, .map-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
+    grid-gap: 20px;
+}
+
+.intro {
+    grid-area: intro;
+}
+.video-title{
+    grid-area: video-title;
+}
+.video-content{
+    grid-area: video-content;
+}
+.photo-title{
+    grid-area: photo-title;
+}
+.photo-content{
+    grid-area: photo-content;
+}
+.map-title{
+grid-area: map-title;
+}
+.map-content{
+    grid-area: map-content;
+}
+
+
+
+
+
+/* CSS FOR NAVBAR AND SUBNAV BAR*/
+.nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 87px 47px;
+    grid-column: 1/13;
+    background-color: #00283C;
+}
+
+.logo{
+    grid-column: 3/5;
+}
+a .logo-img {
+   position: relative;
+    max-height: 134px;
+}
+.elements {
+    font-size: 24px;
+    grid-column: 6/12;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.subnav{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+    background-color: black;
+    grid-row: 2;
+    border-top: 3px solid #9F895D;
+
+}
+.sub-elements {
+    grid-column: 6/10; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+ 
+}
+ul li {
+    display: inline;
+}
+
+ul li a{
+    color: #fff;
+    padding: 15px;
+    
+}
+.breadcrumb {
+    grid-column: 4/10;
+    padding: 0;
+    margin: 0;
+}
+.bread-link {
+    color: navy;
+}
+ul.breadcrumb {
+    
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+  
+    color: black;
+    content: ">\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+
+/* video cards css starts here*/
+
+
+.resource {
+    width: 100%;
+}
+
+.shadow{
+   
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+.shadow-text {
+    padding: 5px;
+}
+.shadow-text p{
+    padding: 10px;
+    margin:0;
+}
+
+.bo-diddley{
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+
+.baseball{
+
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+.verdell-washington{
+
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+.freedom-ride{
+   
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+.cotton-club {
+  
+    box-shadow:3px  5px 6px #ccc;
+    width: 100%;
+}
+
+
+.thumbnail {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*MAP SECTION*/
+
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    right:0;
+    left:0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color:#252525;
+    color:white;
+    height:50px;
+    align-content: center;
+    padding: 0 20%;
+}
+
+
+
+.alachua-info{
+    font-size: 15px;
+    color:white;
+   
+}
+
+
+/*CSS FOR LIGHTBOX*/
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 100%;
+	max-height: 100%;
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
 }
