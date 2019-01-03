@@ -63,6 +63,9 @@ body {
 }
 .map{
     grid-area: map;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
 }
 .fourth-intro{
     grid-area: fourth-intro;
@@ -74,16 +77,24 @@ body {
 
 .markers, .noteworthy-locations{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
   
 }
-.map{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    grid-gap: 20px;
+.walls-sign, .walls-building {
+grid-column: 1/4;
+}
+.serenola, .newnan{
+    grid-column: 4/7;
+}
+.map,{
+ 
     
 }
+.berry-six{
+    grid-column: 1/4;
+}
+
 .register-sites{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
