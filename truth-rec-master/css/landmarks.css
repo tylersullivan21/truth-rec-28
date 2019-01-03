@@ -12,6 +12,9 @@ body {
 
 }
 
+h1 {
+    font-size: 36px;
+}
 
 .grid-container {
     display: grid;
@@ -78,6 +81,7 @@ body {
 .markers, .noteworthy-locations{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    
     grid-gap: 20px;
   
 }
@@ -98,6 +102,7 @@ grid-column: 1/4;
 .register-sites{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    
     grid-gap: 20px;
 }
 
@@ -117,16 +122,6 @@ grid-column: 1/4;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
-
-.photo-content,
-.map-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(219px, 1fr));
-    grid-gap: 20px;
-}
-
-
-
 
 .image-top{
     box-shadow: 3px 5px 6px #ccc;
@@ -207,7 +202,6 @@ ul li a {
     box-shadow: 3px 5px 6px #ccc;
     width: 100%;
 }
-
 .shadow-text {
     padding: 5px;
 }
@@ -224,31 +218,6 @@ ul li a {
     width: 100%;
 }
 
-.baseball {
-
-    box-shadow: 3px 5px 6px #ccc;
-    width: 100%;
-}
-
-.verdell-washington {
-
-    box-shadow: 3px 5px 6px #ccc;
-    width: 100%;
-}
-
-.freedom-ride {
-
-    box-shadow: 3px 5px 6px #ccc;
-    width: 100%;
-}
-
-.cotton-club {
-
-    box-shadow: 3px 5px 6px #ccc;
-    width: 100%;
-}
-
-
 .thumbnail {
     width: 100%;
 }
@@ -261,27 +230,11 @@ ul li a {
 }
 
 
-
-
-
-
-
-
 /*MAP SECTION*/
-
-
-
-
-
 
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    right: 0;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
     background-color: #252525;
     color: white;
     height: 50px;
@@ -289,15 +242,10 @@ footer {
     padding: 0 20%;
 }
 
-
-
 .alachua-info {
     font-size: 15px;
     color: white;
-
 }
-
-
 /*CSS FOR LIGHTBOX*/
 .lightbox {
     /** Default lightbox to hidden */
