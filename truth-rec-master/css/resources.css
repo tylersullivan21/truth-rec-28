@@ -26,13 +26,19 @@ body {
 }
 #header{
     grid-area: header;
+    display: grid;
+
 }
 #resources {
     grid-area: resources;
     display: grid;  
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
     "top-left top-right"
     "bottom-left bottom-right"
+}
+.top-left{
+    grid-area: top-left;
 }
 .resource{
     width: 100%;
@@ -43,16 +49,7 @@ body {
 
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
 
-.video-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
 
-.image-top{
-    box-shadow: 3px 5px 6px #ccc;
-    width: 100%;
-}
 
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
 .nav {
