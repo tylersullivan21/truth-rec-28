@@ -60,6 +60,7 @@ h1 {
 }
 .register-sites{
     grid-area: register-sites
+    
 }
 .third-intro{
     grid-area: third-intro;
@@ -69,21 +70,22 @@ h1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
+    margin-bottom: 3.5rem;
 }
 .fourth-intro{
     grid-area: fourth-intro;
 }
 .noteworthy-locations{
     grid-area: noteworthy-locations;
+    margin-bottom: 3.5rem;
 }
 
 
 .markers, .noteworthy-locations{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    
+    margin-bottom: 3.5rem;
     grid-gap: 20px;
-  
 }
 .walls-sign, .walls-building {
 grid-column: 1/4;
@@ -91,10 +93,7 @@ grid-column: 1/4;
 .serenola, .newnan{
     grid-column: 4/7;
 }
-.map,{
- 
-    
-}
+
 .berry-six{
     grid-column: 1/4;
 }
@@ -102,7 +101,7 @@ grid-column: 1/4;
 .register-sites{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    
+    margin-bottom: 3.5rem;
     grid-gap: 20px;
 }
 
