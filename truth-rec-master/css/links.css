@@ -66,18 +66,31 @@ ul li a{
     
 }
 
+/* CODE FOR MAIN CONTENT STARTS HERE*/
 
+#main-content {
+    text-align: justify;
+    color:#00283C;
+    grid-column: 4/10;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 2.0rem;
+    color: Black;
+}
+#main-content .title {
+    color:#00283C;
+}
 
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     right:0;
     left:0;
-    bottom: 0;
     position: absolute;
     width: 100%;
     background-color:#252525;
     color:white;
+  
     height:50px;
     align-content: center;
 }
