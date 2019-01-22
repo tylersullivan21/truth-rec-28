@@ -51,15 +51,27 @@ body{
 }
 
 /* MAPPING NESTED GRIDS FOR CONTENT AREAS: VIDEO, PHOTOS AND MAP*/
+
+/*code for the transtiions and animations need to go HERE!*/
 .video-content
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+    transform: translate3d(0%, 0px, 0px);
+   box-shadow: 0 0 30px rgba(0,0,0,0.1)
+    
+   
 }
+.shadow:hover {
+    width:250px;
+  }
+  .bo-diddley:hover{
+      width:290px;
+  }
  .photo-content, .map-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(313px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
 }
 
@@ -183,8 +195,8 @@ ul.breadcrumb {
 }
 
 .shadow{
-   
-    box-shadow:3px  5px 6px #ccc;
+    transition:transform .3s cubic-bezier(0.4, 0, 0.2, 1),opacity 0.1s,-webkit-transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
     width: 100%;
 }
 .shadow-text {
@@ -196,28 +208,25 @@ ul.breadcrumb {
 }
 
 .bo-diddley{
-    box-shadow:3px  5px 6px #ccc;
+    transition:transform .3s cubic-bezier(0.4, 0, 0.2, 1),opacity 0.1s,-webkit-transform .3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
+   box-shadow: 0 0 30px rgba(0,0,0,0.1);
 }
 
 .baseball{
-
-    box-shadow:3px  5px 6px #ccc;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
     width: 100%;
 }
 .verdell-washington{
 
-    box-shadow:3px  5px 6px #ccc;
     width: 100%;
 }
 .freedom-ride{
-   
-    box-shadow:3px  5px 6px #ccc;
+;
     width: 100%;
 }
 .cotton-club {
-  
-    box-shadow:3px  5px 6px #ccc;
+
     width: 100%;
 }
 
