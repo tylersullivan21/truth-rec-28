@@ -17,48 +17,8 @@ body {
         "main"
         "footer"
 }
-#main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(20%, 1fr));
-    grid-template-areas:
-        ". intro intro intro ."
-        ". search search search ."
-        ". minutes-title minutes-title minutes-title ."
-        ". cards cards cards .";
-}
-#intro {
-    grid-area: intro;
-    grid-column: 2/5;
-    grid-row: 1;
-}
-#search {
-    grid-area: search;
-    grid-column: 2/5;
-    grid-row: 2;
-}
-.minutes-title {
-    grid-area: minutes-title;
-    grid-column: 2/5;
-    grid-row: 3;
-}
-#cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-column: 2/5;
-}
-.card1 {
-    display: flex;
-    justify-content: space-between;
-    grid-column: 2/3;
-}
-.doc1-img {
-    padding: 10px;
-}
-.card1 {
-    padding: 0 10px;
-}
+
+
 /* CSS FOR NAVBAR AND SUBNAV BAR*/
 .nav {
     grid-area: nav;
@@ -177,34 +137,6 @@ ul li a {
 
 
 
-
-/*
-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    right:0;
-    left:0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-color:#252525;
-    color:white;
-    height:50px;
-    align-content: center;
-}
-
-.visit {
-    grid-column: 2/6;
-    margin: 0;
-    
-}
-
-.alachua-info{
-    font-size: 15px;
-    color:white;
-   
-}
-*/
 
 /*1024 AND LARGER STYLES END HERE*/
 
@@ -419,3 +351,145 @@ footer {
 
 
 }
+
+
+
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 22% 1fr 22%;
+
+       
+}
+#intro {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+#path{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.path-left{
+    grid-column: 1/2;
+    position: relative;
+}
+.path-right{
+    grid-column: 2/3;
+    position: relative;
+}
+
+.path-img{
+    width: 100%;
+    
+    opacity:0.3;
+}
+
+.overlay{
+    background: orange;
+
+opacity: .3;
+
+position: absolute;
+
+height: 100%;
+
+width: 100%;
+
+top: 0;
+
+left: 0;
+}
+
+.span-text{
+    position: absolute;
+
+    height: 100%;
+    
+    width: 100%;
+    
+    top: 0;
+    
+    left: 0;
+}
+
+.text{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translateY(-50%) translateX(-50%);
+   
+}
+
+.text p{
+    border-bottom: 3px gold solid;
+    font-size: 39px;
+}
+
+.overlay-right{
+    position:absolute;
+    background: rgba(129, 207, 224, 1);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.span-text-right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.text-right{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+ }
+ .text p{
+    border-bottom: 3px gold solid;
+    font-size: 39px;
+}
+
+.para-right{
+
+        border-bottom: 3px gold solid;
+        font-size: 39px;
+    }
+
+
+/*
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    right:0;
+    left:0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color:#252525;
+    color:white;
+    height:50px;
+    align-content: center;
+}
+
+.visit {
+    grid-column: 2/6;
+    margin: 0;
+    
+}
+
+.alachua-info{
+    font-size: 15px;
+    color:white;
+   
+}
+*/
