@@ -374,6 +374,7 @@ ul li a {
     grid-row: 2;
 }
 
+/*set each path as the relative container*/
 .path-left{
     grid-column: 1/2;
     position: relative;
@@ -389,31 +390,22 @@ ul li a {
     opacity:0.3;
 }
 
+/* THIS IS THE OVERLAY FOR THE LEFT PATH  -- CODE FOR THE LEFT PATH IMAGE*/
 .overlay{
     background: orange;
-
 opacity: .3;
-
 position: absolute;
-
 height: 100%;
-
 width: 100%;
-
 top: 0;
-
 left: 0;
 }
 
 .span-text{
     position: absolute;
-
-    height: 100%;
-    
-    width: 100%;
-    
-    top: 0;
-    
+    height: 100%;  
+    width: 100%;   
+    top: 0;   
     left: 0;
 }
 
@@ -430,6 +422,7 @@ left: 0;
     font-size: 39px;
 }
 
+/* OVERLAY FOR THE RIGHT PATH -- CODE FOR THE RIGHT PATH IMAGE*/
 .overlay-right{
     position:absolute;
     background: rgba(129, 207, 224, 1);
