@@ -1,44 +1,21 @@
-$('.menu__toggle').on('click', function(){
-    $(this).toggleClass('on');
-  })
 
-  /* Opening the modal */ 
+var explore = document.getElementById("explore");
 
-
-/* 1. Creating a variable toggle corresponding to the element with class 'openModalBtn' within the document */
-var toggle = document.getElementsByClassName('openModalBtn')[0];
-
-/* 2. Defining a function named openModal, to write instructions that should run on clicking the element toggle */
-function openModal() {
-  var modal = document.getElementById('modal');
-  modal.style.display = "grid";
+function showExploreSubnav(){
+   var subnav = document.getElementsByClassName("subnav")[0];
+   subnav.classList.add("show");
+   //subnav.setAttribute("style","display:block");
 }
 
-/* 3. Attach the function to the element toggles on click event */
-/* jquery */
-/*
-    $('.openModalBtn').on('click', openModal);
-*/
+explore.onmouseover = showExploreSubnav;
 
-toggle.onclick = openModal;
 
-/* Closing the modal */ 
+function hideExploreSubnav(){
 
-/* 1. Creating a variable closeModalBtn corresponding to the element with ID 'closeModalBtn' within the document */
-var closeModalBtn = document.getElementById('closeModalBtn');
-
-/* 2. Defining a function named closeModal, to write instructions that sould run on clicking the element closeModalBtn */
-
-function closeModal() {
-  var modal = document.getElementById('modal');
-  modal.style.display = "none";
+var subnav = document.getElementsByClassName("subnav")[0];
+subnav.classList.remove("show");
 
 }
 
-/* 3. Attach the function to the element closeModalBtn on click event */
-
-/* jquery */
-/*$('#closeModalBtn').on('click', closeModal);*/
-
-closeModalBtn.onclick = closeModal;
+explore.onmouseout = hideExploreSubnav;
 
