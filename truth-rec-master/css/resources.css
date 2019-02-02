@@ -140,6 +140,7 @@ ul li a {
 
 #main{
     display: grid;
+
     grid-area: main;
     grid-template-columns: 25% 1fr 25%;
 }
@@ -147,11 +148,13 @@ ul li a {
 .image-grid{
     display:grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
     grid-column: 2/3;
-    
 }
 
+.title{
+    grid-column: 2/3;
+}
 /*
 footer {
     display: grid;
