@@ -6,7 +6,7 @@
 /* STYLES FOR 1024 AND LARGER*/
 body {
     font-family: Arial serif;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 .elements .menu , .subnav ul li{
@@ -146,7 +146,7 @@ ul li a {
 #main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 20% 1fr 20%;
 }
 
 .title{
@@ -157,9 +157,10 @@ ul li a {
 }
 .markers, .register-sites, .noteworthy-locations, .map{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 315px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
     grid-column: 2/3;
     grid-gap: 20px;
+    
 }
 .second-intro{
     grid-column: 2/3;
@@ -181,12 +182,27 @@ ul li a {
 }
 
 
+.walls-sign{
+    border: 2px solid blue;
+}
 
 
 
 
+.markers, .noteworthy-locations, .map{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-column: 2/3;
+    grid-gap: 20px;
+    
+}
 
-
+.register-sites, {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column: 2/3;
+    grid-gap: 20px;
+}
 
 
 
@@ -230,6 +246,7 @@ footer {
     .sub-elements li{
         padding-right: 25px;
     }
+   
 }
 @media screen and (max-width: 1175px){
 
@@ -386,6 +403,56 @@ footer {
 
    
 
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-column: 1/4;
+}
+
+.title{
+    grid-column: 2/3;
+}
+.first-intro{
+    grid-column: 2/3;
+}
+
+.second-intro{
+    grid-column: 2/3;
+}
+.register-sites{
+    grid-column: 2/3;
+}
+.third-intro{
+    grid-column: 2/3;;
+}
+.map{
+    grid-column: 2/3;
+}
+.fourth-intro{
+    grid-column: 2/3;
+}
+.noteworthy-locations{
+    grid-column: 2/3;
+}
+
+.markers, .register-sites, .noteworthy-locations, {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column: 2/3;
+    grid-gap: 20px;
+    
+}
+.map{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-column: 2/3;
+    grid-gap: 20px;
+    
+}
+.walls-sign{
+    border: 2px solid blue;
+}
 
 }
 
@@ -398,6 +465,13 @@ footer {
     }
     .sub-elements li{
         padding-right: 8px;
+    }
+    .markers, .register-sites, .noteworthy-locations, .map{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-column: 2/3;
+        grid-gap: 20px;
+        
     }
 }
 
@@ -430,7 +504,13 @@ footer {
         border-top: 3px solid #9F895D;
 
     }
-
+    .markers, .register-sites, .noteworthy-locations, .map{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column: 2/3;
+        grid-gap: 20px;
+        
+    }
 
 }
 
